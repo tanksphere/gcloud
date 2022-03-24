@@ -10,6 +10,7 @@ type RegistryOptions struct {
 	ServiceName string
 	ServicePort uint64
 	Version     string
+	Metadata        map[string]string
 }
 type ClientOptions struct {
 	TimeoutMs            uint64 //timeout for requesting Nacos server, default value is 10000ms

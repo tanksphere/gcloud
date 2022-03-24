@@ -1,8 +1,6 @@
 package nacos_registry
 
 import (
-	"runtime"
-
 	"github.com/skirrund/gcloud/logger"
 	"github.com/skirrund/gcloud/plugins/nacos"
 	"github.com/skirrund/gcloud/registry"
@@ -32,6 +30,7 @@ type nacosRegistry struct {
 
 const (
 	NACOS_DISCOVERY_SERVER_ADDE_KEY = "nacos.discovery.server-addr"
+	NACOS_DISCOVERY_SERVER_METADATA_KEY = "nacos.discovery.metadata"
 )
 
 var registryCenter *nacosRegistry
@@ -70,7 +69,8 @@ func (nr *nacosRegistry) RegisterInstance() error {
 		Enable:      true,
 		Healthy:     true,
 		Ephemeral:   true,
-		Metadata:    map[string]string{"version": opts.Version, "preserved.register.source": "http/go-" + runtime.Version()},
+		//Metadata:    map[string]string{"version": opts.Version, "preserved.register.source": "http/go-" + runtime.Version()},
+		Metadata:    opts.Metadata,
 		//ClusterName: "cluster-a", // default value is DEFAULT
 		GroupName: opts.Group, // default value is DEFAULT_GROUP
 	}

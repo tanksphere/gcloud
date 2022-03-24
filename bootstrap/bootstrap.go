@@ -3,8 +3,8 @@ package bootstrap
 import (
 	"flag"
 	sentinel "github.com/alibaba/sentinel-golang/api"
-	sentinel_ds "github.com/alibaba/sentinel-golang/ext/datasource"
 	sentinel_config "github.com/alibaba/sentinel-golang/core/config"
+	sentinel_ds "github.com/alibaba/sentinel-golang/ext/datasource"
 	"github.com/alibaba/sentinel-golang/logging"
 	"github.com/nacos-group/nacos-sdk-go/clients"
 	"github.com/nacos-group/nacos-sdk-go/clients/config_client"
@@ -15,6 +15,7 @@ import (
 	"io/ioutil"
 	"log"
 	"os"
+	"runtime"
 	"strconv"
 	"strings"
 	"time"
@@ -257,6 +258,14 @@ func (app *Application) StartRegistry() registry.IRegistry {
 	addr := app.BootOptions.Config.GetString(nacosRegistry.NACOS_DISCOVERY_SERVER_ADDE_KEY)
 	dir := app.BootOptions.LoggerDir + "/" + app.BootOptions.ServerName + "/" + app.BootOptions.Host
 
+	metadata := map[string]string{"version": "", "preserved.register.source": "http/go-" + runtime.Version()}
+	dynamicMetadata :=app.BootOptions.Config.GetStringMapString(nacosRegistry.NACOS_DISCOVERY_SERVER_METADATA_KEY)
+	if dynamicMetadata != nil && len(dynamicMetadata) > 0 {
+		for mkey, mvalue := range dynamicMetadata {
+			metadata[mkey] = metadata[mvalue]
+		}
+	}
+
 	options := registry.Options{
 		ServerAddrs: strings.Split(addr, ","),
 		ClientOptions: registry.ClientOptions{
@@ -269,6 +278,7 @@ func (app *Application) StartRegistry() registry.IRegistry {
 		RegistryOptions: registry.RegistryOptions{
 			ServiceName: app.BootOptions.ServerName,
 			ServicePort: app.BootOptions.ServerPort,
+			Metadata: metadata,
 		},
 	}
 	registry.RegistryCenter = nacosRegistry.NewRegistry(options)
