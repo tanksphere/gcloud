@@ -6,8 +6,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/skirrund/gcloud/cache/redis"
-	"github.com/skirrund/gcloud/logger"
+	"github.com/tanksphere/gcloud/cache/redis"
+	"github.com/tanksphere/gcloud/logger"
 )
 
 const (

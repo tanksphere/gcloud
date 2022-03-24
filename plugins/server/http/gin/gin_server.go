@@ -17,11 +17,11 @@ import (
 	"time"
 
 	"github.com/opentracing/opentracing-go"
-	"github.com/skirrund/gcloud/logger"
-	"github.com/skirrund/gcloud/plugins/server/http/gin/prometheus"
-	"github.com/skirrund/gcloud/plugins/zipkin"
-	"github.com/skirrund/gcloud/response"
-	"github.com/skirrund/gcloud/server"
+	"github.com/tanksphere/gcloud/logger"
+	"github.com/tanksphere/gcloud/plugins/server/http/gin/prometheus"
+	"github.com/tanksphere/gcloud/plugins/zipkin"
+	"github.com/tanksphere/gcloud/response"
+	"github.com/tanksphere/gcloud/server"
 
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 

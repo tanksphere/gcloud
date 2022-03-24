@@ -1,7 +1,7 @@
 package feign
 
 import (
-	"github.com/skirrund/gcloud/server/http"
+	"github.com/tanksphere/gcloud/server/http"
 )
 
 type Client struct {

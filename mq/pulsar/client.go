@@ -5,7 +5,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/skirrund/gcloud/logger"
+	"github.com/tanksphere/gcloud/logger"
 
 	"github.com/apache/pulsar-client-go/pulsar"
 )

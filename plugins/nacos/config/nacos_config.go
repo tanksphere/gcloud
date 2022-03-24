@@ -5,11 +5,11 @@ import (
 	"io"
 	"strings"
 
-	commonConfig "github.com/skirrund/gcloud/config"
-	"github.com/skirrund/gcloud/logger"
-	"github.com/skirrund/gcloud/plugins/nacos"
+	commonConfig "github.com/tanksphere/gcloud/config"
+	"github.com/tanksphere/gcloud/logger"
+	"github.com/tanksphere/gcloud/plugins/nacos"
 
-	"github.com/skirrund/gcloud/server"
+	"github.com/tanksphere/gcloud/server"
 
 	"github.com/nacos-group/nacos-sdk-go/clients/config_client"
 	"github.com/nacos-group/nacos-sdk-go/vo"

@@ -2,7 +2,7 @@ package nacos
 
 import (
 	"fmt"
-	"github.com/skirrund/gcloud/logger"
+	"github.com/tanksphere/gcloud/logger"
 
 	"github.com/alibaba/sentinel-golang/ext/datasource"
 	"github.com/alibaba/sentinel-golang/util"

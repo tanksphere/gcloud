@@ -3,7 +3,7 @@ package config
 import (
 	"io"
 
-	"github.com/skirrund/gcloud/server"
+	"github.com/tanksphere/gcloud/server"
 )
 
 type IConfig interface {

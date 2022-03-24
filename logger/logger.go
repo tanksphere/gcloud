@@ -7,7 +7,7 @@ import (
 	"sync"
 	"time"
 
-	rotatelogs "github.com/skirrund/gcloud/logger/rotatelogs"
+	rotatelogs "github.com/tanksphere/gcloud/logger/rotatelogs"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
 )

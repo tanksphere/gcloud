@@ -1,4 +1,4 @@
-module github.com/skirrund/gcloud
+module github.com/tanksphere/gcloud
 
 go 1.17
 

@@ -1,7 +1,7 @@
 package utils
 
 import (
-	"github.com/skirrund/gcloud/response"
+	"github.com/tanksphere/gcloud/response"
 )
 
 type Error struct {

@@ -1,8 +1,8 @@
 package utils
 
 import (
-	"github.com/skirrund/gcloud/response"
-	"github.com/skirrund/gcloud/utils/validator"
+	"github.com/tanksphere/gcloud/response"
+	"github.com/tanksphere/gcloud/utils/validator"
 
 	"strings"
 

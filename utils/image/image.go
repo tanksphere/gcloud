@@ -10,7 +10,7 @@ import (
 
 	"regexp"
 
-	"github.com/skirrund/gcloud/logger"
+	"github.com/tanksphere/gcloud/logger"
 
 	"github.com/disintegration/imaging"
 )

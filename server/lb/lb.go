@@ -12,15 +12,15 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/skirrund/gcloud/plugins/zipkin"
+	"github.com/tanksphere/gcloud/plugins/zipkin"
 
-	"github.com/skirrund/gcloud/bootstrap"
-	"github.com/skirrund/gcloud/logger"
-	"github.com/skirrund/gcloud/registry"
-	"github.com/skirrund/gcloud/server"
-	"github.com/skirrund/gcloud/server/decoder"
-	"github.com/skirrund/gcloud/server/request"
-	"github.com/skirrund/gcloud/utils"
+	"github.com/tanksphere/gcloud/bootstrap"
+	"github.com/tanksphere/gcloud/logger"
+	"github.com/tanksphere/gcloud/registry"
+	"github.com/tanksphere/gcloud/server"
+	"github.com/tanksphere/gcloud/server/decoder"
+	"github.com/tanksphere/gcloud/server/request"
+	"github.com/tanksphere/gcloud/utils"
 )
 
 const (

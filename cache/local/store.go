@@ -5,7 +5,7 @@ import (
 	"encoding/gob"
 	"sync"
 
-	"github.com/skirrund/gcloud/logger"
+	"github.com/tanksphere/gcloud/logger"
 
 	"github.com/coocood/freecache"
 )

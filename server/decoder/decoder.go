@@ -3,7 +3,7 @@ package decoder
 import (
 	"strings"
 
-	"github.com/skirrund/gcloud/logger"
+	"github.com/tanksphere/gcloud/logger"
 
 	"github.com/json-iterator/go"
 )

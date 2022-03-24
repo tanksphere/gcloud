@@ -8,8 +8,8 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/skirrund/gcloud/logger"
-	"github.com/skirrund/gcloud/utils/alioss"
+	"github.com/tanksphere/gcloud/logger"
+	"github.com/tanksphere/gcloud/utils/alioss"
 )
 
 func SaveImageBase64(base64Str string, filePath string, fileName string) (fn string, err error) {

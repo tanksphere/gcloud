@@ -4,10 +4,10 @@ import (
 	"net"
 	"strconv"
 
-	"github.com/skirrund/gcloud/config"
-	"github.com/skirrund/gcloud/registry"
+	"github.com/tanksphere/gcloud/config"
+	"github.com/tanksphere/gcloud/registry"
 
-	"github.com/skirrund/gcloud/logger"
+	"github.com/tanksphere/gcloud/logger"
 
 	"github.com/nacos-group/nacos-sdk-go/clients"
 	"github.com/nacos-group/nacos-sdk-go/clients/config_client"

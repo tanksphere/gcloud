@@ -3,9 +3,9 @@ package mq
 import (
 	"time"
 
-	"github.com/skirrund/gcloud/logger"
-	"github.com/skirrund/gcloud/mq/consumer"
-	"github.com/skirrund/gcloud/mq/pulsar"
+	"github.com/tanksphere/gcloud/logger"
+	"github.com/tanksphere/gcloud/mq/consumer"
+	"github.com/tanksphere/gcloud/mq/pulsar"
 
 	"github.com/apache/pulsar-client-go/pulsar"
 )

@@ -5,10 +5,10 @@ import (
 	"net/http"
 	"sync"
 
-	"github.com/skirrund/gcloud/logger"
-	"github.com/skirrund/gcloud/utils"
+	"github.com/tanksphere/gcloud/logger"
+	"github.com/tanksphere/gcloud/utils"
 
-	"github.com/skirrund/gcloud/bootstrap/env"
+	"github.com/tanksphere/gcloud/bootstrap/env"
 
 	"github.com/opentracing/opentracing-go"
 	zkOt "github.com/openzipkin-contrib/zipkin-go-opentracing"

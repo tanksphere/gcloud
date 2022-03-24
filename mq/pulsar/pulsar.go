@@ -5,10 +5,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/skirrund/gcloud/logger"
-	"github.com/skirrund/gcloud/utils"
+	"github.com/tanksphere/gcloud/logger"
+	"github.com/tanksphere/gcloud/utils"
 
-	baseConsumer "github.com/skirrund/gcloud/mq/consumer"
+	baseConsumer "github.com/tanksphere/gcloud/mq/consumer"
 
 	"github.com/apache/pulsar-client-go/pulsar"
 )

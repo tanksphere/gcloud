@@ -4,9 +4,9 @@ import (
 	"io"
 	"sync"
 
-	"github.com/skirrund/gcloud/config"
-	"github.com/skirrund/gcloud/logger"
-	"github.com/skirrund/gcloud/server"
+	"github.com/tanksphere/gcloud/config"
+	"github.com/tanksphere/gcloud/logger"
+	"github.com/tanksphere/gcloud/server"
 
 	"github.com/spf13/viper"
 )

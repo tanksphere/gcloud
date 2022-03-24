@@ -4,7 +4,7 @@ import (
 	"errors"
 	"reflect"
 
-	"github.com/skirrund/gcloud/logger"
+	"github.com/tanksphere/gcloud/logger"
 )
 
 func SimpleCopyProperties(dst, src interface{}) (err error) {

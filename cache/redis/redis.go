@@ -7,7 +7,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/skirrund/gcloud/logger"
+	"github.com/tanksphere/gcloud/logger"
 
 	"github.com/go-redis/redis/v8"
 )

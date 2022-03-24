@@ -10,11 +10,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/skirrund/gcloud/bootstrap/env"
-	"github.com/skirrund/gcloud/logger"
-	"github.com/skirrund/gcloud/server/lb"
-	"github.com/skirrund/gcloud/server/request"
-	"github.com/skirrund/gcloud/utils"
+	"github.com/tanksphere/gcloud/bootstrap/env"
+	"github.com/tanksphere/gcloud/logger"
+	"github.com/tanksphere/gcloud/server/lb"
+	"github.com/tanksphere/gcloud/server/request"
+	"github.com/tanksphere/gcloud/utils"
 )
 
 const (

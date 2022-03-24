@@ -4,7 +4,7 @@ import (
 	"errors"
 	"sync"
 
-	"github.com/skirrund/gcloud/logger"
+	"github.com/tanksphere/gcloud/logger"
 )
 
 type Server interface {

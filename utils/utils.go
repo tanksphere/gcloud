@@ -14,9 +14,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/skirrund/gcloud/logger"
+	"github.com/tanksphere/gcloud/logger"
 
-	cc "github.com/skirrund/gcloud/config"
+	cc "github.com/tanksphere/gcloud/config"
 
 	"github.com/google/uuid"
 	"github.com/json-iterator/go"

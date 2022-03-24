@@ -1,11 +1,11 @@
 package nacos_registry
 
 import (
-	"github.com/skirrund/gcloud/logger"
-	"github.com/skirrund/gcloud/plugins/nacos"
-	"github.com/skirrund/gcloud/registry"
+	"github.com/tanksphere/gcloud/logger"
+	"github.com/tanksphere/gcloud/plugins/nacos"
+	"github.com/tanksphere/gcloud/registry"
 
-	"github.com/skirrund/gcloud/server"
+	"github.com/tanksphere/gcloud/server"
 
 	"github.com/nacos-group/nacos-sdk-go/clients/naming_client"
 	"github.com/nacos-group/nacos-sdk-go/model"
