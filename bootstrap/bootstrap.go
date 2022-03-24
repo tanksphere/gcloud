@@ -262,7 +262,7 @@ func (app *Application) StartRegistry() registry.IRegistry {
 	dynamicMetadata :=app.BootOptions.Config.GetStringMapString(nacosRegistry.NACOS_DISCOVERY_SERVER_METADATA_KEY)
 	if dynamicMetadata != nil && len(dynamicMetadata) > 0 {
 		for mkey, mvalue := range dynamicMetadata {
-			metadata[mkey] = metadata[mvalue]
+			metadata[mkey] = mvalue
 		}
 	}
 
